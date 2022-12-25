@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { useRef } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa"
 import "../styles/main.css"

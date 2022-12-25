@@ -84,3 +84,11 @@ header .nav-btn {
 
 
 }
+
+h2 {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

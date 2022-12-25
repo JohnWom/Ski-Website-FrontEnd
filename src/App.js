@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
 import Navbar from './components/NavBar';
+import Conditions from './components/conditions';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            resorts : ['Okemo', 'Snow', 'Hunter', 'Sunapee', 'Stowe']
-        }
-    }
+    state = {
+            resorts : ['Okemo', 'Snow', 'Hunter', 'Sunapee', 'Stowe'],
+            resort : 'Okemo'
+        };
 
     render() { 
         return (
-            <React.Fragment>
+            <div className='main__wrap'>
                 <Navbar />
-            </React.Fragment>
+                <div className='conditions__box'>
+                    <h2>Current Conditions</h2>
+                    <Conditions resort = {this.state.resort} />
+                </div>
+                <div className='graph__box'>
+                    <h2>Conditions this year</h2>
+                </div>
+            </div>
+            
         );
-    }
+    };
 }
  
 export default App;

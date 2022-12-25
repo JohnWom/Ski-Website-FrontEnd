@@ -48,7 +48,7 @@ const Text = ({ num, den, terrain }) => {
   );
 };
 
-const Pie = ({ num, color, den, terrain='False' }) => {
+const Pie = ({ num, color, den, terrain }) => {
   const pct = (num / den) * 100;
   return (
     <svg width={200} height={200}>

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
+
+.Lift, .Trails, .Terrain {
+    padding: 2px;
+    margin: 0;
+    flex-basis: 33%;
+    display: grid;
+    grid-template-columns: [first] auto [second];
+    grid-template-rows: [row1-start] 30px [row2-start] 90 px [row2-end];
+    border: 5px;
+    border-style: solid;
+    border-color: #101094;
+
+}
+
+.condition-label {
+    grid-row: 1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+svg {
+    grid-row: 2;
+    display: block;
+    margin: auto;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+
+}
+
+.Lift {
+    order: 1;
+}
+
+.Trails {
+    order: 2;
+}
+
+.Terrain {
+    order: 3;
+}
