@@ -24,7 +24,7 @@ const Circle = ({ color, pct }) => {
 const Text = ({ num, den, terrain }) => {
   if (terrain) {
     return (
-      <text
+      <p
         x="50%"
         y="50%"
         dominantBaseline="central"
@@ -32,11 +32,11 @@ const Text = ({ num, den, terrain }) => {
         fontSize={"1.5em"}
       >
         {num}%
-      </text>
+      </p>
     );
   }
   return (
-    <text
+    <p
       x="50%"
       y="50%"
       dominantBaseline="central"
@@ -44,7 +44,7 @@ const Text = ({ num, den, terrain }) => {
       fontSize={"1.5em"}
     >
       {num}/{den}
-    </text>
+    </p>
   );
 };
 
