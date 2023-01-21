@@ -86,9 +86,22 @@ header .nav-btn {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 36px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.conditions__graph {
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+    border-top: solid var(--mainColor);
+}
+
+
+.resorts__button {
+    color: white;
+    
 }
