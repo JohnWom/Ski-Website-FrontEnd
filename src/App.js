@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navigation/NavBar';
 import Conditions from './components/Conditions Display/conditions';
-
+import NavItem from './components/Navigation/NavItem';
+import DropDownMenu from './components/Navigation/DropDownMenu';
 
 class App extends Component {
     state = {
@@ -13,7 +14,14 @@ class App extends Component {
     render() { 
         return (
             <div className='main__wrap'>
-                <Navbar />
+                <Navbar>
+                    <NavItem text="About"/>
+                    <NavItem text="Resorts">
+                        <DropDownMenu></DropDownMenu>
+                    </NavItem>
+                    <NavItem text="Contact"/>
+                </Navbar>
+
                 <div className='conditions__box'>
                     <h2>Current Conditions</h2>
                     <Conditions resort = {this.state.resort} />

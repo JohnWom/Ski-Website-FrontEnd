@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Pie from '../pie';
-import "../styles/conditions.css"
+import "../../styles/conditions.css"
 
 
 class Conditions extends Component {
     render() { 
-        const {resort} = this.props;
+        //const {resort} = this.props;
 
         return (
         <div className='conditions'>

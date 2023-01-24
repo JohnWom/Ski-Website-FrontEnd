@@ -1,11 +1,11 @@
 import React from 'react';
 import { useRef } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa"
-import "../styles/main.css"
-import ResortList from './resorts_dropdown';
-const directory = require('../../config/resorts.json');
-
-resorts = directory.keys();
+import {ReactComponent as SkiIcon} from "../../Images/Ski Icon.svg"
+import "../../styles/main.css"
+import "../../styles/navbar.css"
+//const directory = require('../../config/resorts.json');
+//resorts = directory.keys();
 
 function Navbar(props) {
     const navRef = useRef(null);
@@ -16,10 +16,9 @@ function Navbar(props) {
 
     return (
         <header>
-            <h3>Logo</h3>
+            <span className='Icon'><SkiIcon /></span>
             <nav ref={navRef}>
                 <ul className='navbar-nav'>{props.children} </ul>
-
 
                 <button className='nav-btn nav-close-btn' onClick={showNavBar}>
                     <FaTimes />
